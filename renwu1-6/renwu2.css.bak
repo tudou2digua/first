@@ -1,0 +1,8 @@
+*{margin:0;padding:0;}
+body{font-family:'Microsoft YaHei';line-height:1;background:gray;}
+#head{background:black;height:50px;}
+#head img{display:block;width:120px;height:50px;margin-left:50px;float:left;}
+#head ul{float:right;margin-right:20px;}
+#head ul li{width:100px;display:block;float:left; padding:15px 10px;border-left:1px solid gray;border-right:1px solid gray;}
+#head ul li a{text-decoration:none; color:white; font-size:18px;}
+#art1{margin-top:30px;}

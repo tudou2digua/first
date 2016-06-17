@@ -1,0 +1,27 @@
+*{margin:0;padding:0;}
+body{font-family:'Microsoft YaHei';background:#CCC;}
+#head{background:#333;height:50px;}
+#head img{display:block;width:120px;height:50px;margin-left:50px;float:left;}
+#head ul{float:right;margin-right:20px;}
+#head ul li{width:100px;display:block;float:left; height:18px;padding:15px 10px;border-left:1px solid gray;border-right:1px solid gray;}
+#head ul li a{text-decoration:none; color:white; font-size:18px;}
+#art1,#art2,#art3,#art4,#art5{margin-top:50px;margin-left:20px;margin-right:20px;padding-top:30px;padding:20px;background:#FFF;line-height:2;box-shadow:3px 3px 3px #666666;}
+h4,.title{color:#999;}
+.text{text-indent:2em;}
+#art2 ul,#art3 ul{list-style:none;display:block;margin-left:50px;}
+#art3 ul li{border:1px solid #999;padding:10px;margin:15px;dispaly:block;width:800px;text-align:center;font-size:24px;font-weight:400;}
+#art4 ol{display:block;margin-left:50px;list-style-position:inside;}
+#art4 ol li,#art4 .text1{font-weight:400;}
+#art4 table {display:table;width:100%;border-collapse:collapse;}
+#art4 table td{border:1px solid #CCC;}
+tr:first-child{background:#000;color:#FFF;}
+th:nth-child(1),th:nth-child(2){width:40%;}
+th:nth-child(3){width:20%;}
+tr:last-child{background:#CCC;font-weight:bold;}
+#art5{font-size:14px;}
+#art5 h3{border-left:3px solid #CCC;padding:10px;}
+#art5 form{dispaly:block;margin-left:15px;}
+#art5 form  .tips{display:inline-block;text-align:right;width:35%;padding-right:15px;}
+#art5 form p{margin-left:35%;padding-left:15px;}
+#btn{display:block;width:100%;;border-radius:10px;;color:#FFF;font-size:24px;background:#00C;font-weight:bold;border:none;padding:10px;}
+footer{background:#000;text-align:center;height:40px;color:#FFF;margin-top:50px;font-size:12px;font-weight:bold;padding-top:34px;}
