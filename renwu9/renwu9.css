@@ -116,6 +116,12 @@ body{
 	box-sizing:border-box;
 	padding-left:40px;
 }
+.rotate:hover{
+color:#FFF;
+}
+.rotate:hover .fa-angle-right{
+	transform:rotate(90deg);
+}
 .other-list{
 	width:100%;
 	box-sizing:border-box;

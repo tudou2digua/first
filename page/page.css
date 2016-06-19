@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
-html,body{
+html,body,ul{
 	margin:0;
 	padding:0;
 }
@@ -12,6 +12,7 @@ body{
 }
 ul li{
 	list-style:none;
+	list-style-position:inside;
 	text-align:center;
 }
 ul li a{
@@ -20,7 +21,7 @@ ul li a{
 .toolbar{
 	width:100%;
 	border-top:5px solid #cc0000;
-	height:10%;
+	height:90px;
 	display:flex;
 	display:-webkit-flex;
 	flex-direction:row;
@@ -76,29 +77,39 @@ ul li a{
 	width:100%;
 	height:70%;
 }
-.head-img{
+header{
 	width:100%;
-	height:30%;
-	position:relative;
-	width:100%;
-	
+	height:346px;
 	text-align:center;
 	position:relative;
 }
-.head-img p{
-	color:#f3dedf;
-	font-size:23px;
+#box{
+	width:1349px;
+	height:346px;
+	position:relative;
+	margin:auto;
+	overflow:hidden;
+	}
+ #box img{
+	 display:block;
+	 width:1349px;
+	 height:346px;}
+ #box ul{
+	 position:absolute;
+	 top:0;
+	 left:0;
+	 display:flex;
+	 display:-webkit-flex;
+	 flex-direction:row;}
+ 
+header #item{
 	position:absolute;
-	top:48%;
-	left:40%;
+	left:46%;
 	
-}
-header .item{
-	position:absolute;
-	left:53%;
 	bottom:5%;
+	z-index:1;
 }
-header .item li{
+header #item ul li{
 	width:10px;
 	height:10px;
 	border-radius:100%;
@@ -106,10 +117,10 @@ header .item li{
 	float:left;
 	background:#c1bab7;
 }
-header .item .active{
+header #item ul .active{
 	background:#cc0000;
-
 }
+article{clear:both;}
 .sec1{
 	margin-left:200px;
 	margin-right:50px;
@@ -248,4 +259,58 @@ header .item .active{
 }
 .big span{
 	color:#db0000;
+}
+footer{
+	font-size:13px;
+}
+.f1{
+	display:flex;
+	display:-webkit-flex;
+	flex-direction:row;
+	width:100%;
+	height:300px;
+	background:#222222;
+	color:#8f8f8f;
+	padding-top:50px;
+}
+.f1 div{
+	width:200px;
+	text-align:left;
+	margin-left:50px;
+}
+.f1 div ul{
+	width:200px;
+	padding-left:0;
+	
+}
+.f1 div ul li{
+	text-align:left;
+	font-size:16px;
+	margin-top:5px;
+}
+.f1 div ul li a{
+	color:#8f8f8f;
+}
+.low{
+	padding-top:20px;
+}
+.low p:first-child{
+	font-size:24px;
+	margin-bottom:-6px;
+}
+.connect h4{
+	color:#c40909;
+}
+.connect ul li{
+	height:30px;
+}
+.connect ul li i{
+	color:#d80101;
+}
+.f2{background:#101010;
+width:100%;
+height:50px;
+text-align:center;
+padding-top:15px;
+color:#555555;
 }
