@@ -368,7 +368,7 @@ color:#555555;
 	background:#f0f2f4;
     width:400px;
 	height:350px;
-	color:#FFF;
+	
 	position:absolute;
 	top:50%;
 	left:50%;
@@ -384,6 +384,7 @@ color:#555555;
 	border-top-right-radius:10px;
 	margin-top:0;
 	margin-bottom:20px;
+	color:#FFF;
 	/*
 	display:-webkit-box;
 	display:-moz-box;
