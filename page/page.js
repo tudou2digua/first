@@ -1,6 +1,6 @@
 // JavaScript Document
-window.onload=function()
-{
+
+
      var oItem=document.getElementById('item');
 	 var aUl1=oItem.getElementsByTagName('ul')[0];
 	 var aLb=aUl1.getElementsByTagName('li');
@@ -40,7 +40,7 @@ window.onload=function()
 		tab();
 	}
 	setInterval(next,3000);
-};
+
 
 function getStyle(obj,name)
   {
@@ -100,3 +100,89 @@ function getStyle(obj,name)
   $(document).ready(function(e) {
     
 });
+var oLista=document.getElementById('img-list');
+var aLi=oLista.getElementsByTagName('li');
+var oListb=document.getElementById('dirc-list');
+var bLi=oListb.getElementsByTagName('li');
+var i;
+for(i=0;i<aLi.length;i++)
+{
+	aLi[i].index=i;
+	aLi[i].onmousedown=function(ev)
+	{
+		now=this.index;
+		clearClass();
+		aLi[now].className='bs';
+		canBubble(ev);
+		bLi[0].onclick=function()
+		{ 
+			if(now==0)
+			{
+				now=aLi.length-1;
+			   clearClass();
+			   aLi[now].className='bs';
+			}else
+			{
+			now--;
+			clearClass();
+			aLi[now].className='bs';
+			}
+			
+	     }
+		bLi[1].onclick=function()
+		{
+			clearClass();
+			 aLi[now].className='bs';
+			 now++;
+		}
+	}
+}
+
+document.onmousedown=function()
+{
+	clearClass();
+}
+
+function clearClass(){
+	
+	   var j=0;
+		for(j=0;j<aLi.length;j++)
+		{
+			aLi[j].className='';
+		}
+}
+function canBubble(ev)
+{
+	var oEvent=ev||event;
+	if(oEvent.cancelBubble)
+	{
+		oEvent.cancelBubble=true;
+	}
+	else
+	{
+		oEvent.stopPropagation();
+	}
+}
+
+var oBtn=document.getElementById('btn');
+var oForm=document.getElementById('form');
+var omyForm=document.getElementById('myForm');
+var oClose=document.getElementById('close');
+var oTxt=document.getElementById('txt');
+oBtn.onclick=function(){
+	var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+	oForm.style.display="block";
+	oForm.style.top=scrollTop+'px';
+}
+oClose.onclick=function(){
+	oForm.style.display="none";
+}
+
+function formReset()
+{
+	omyForm.reset();
+}
+function formSubmit()
+{
+	omyForm.submit();
+}	

@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>form</title>
+
+
+<script>
+/*
+window.onkeydown=function(ev)
+{
+	var oEvent=ev||event;
+	alert(oEvent.keyCode);
+}
+*/
+function formReset()
+{
+	var omyForm=document.getElementById('myForm');
+	omyForm.reset();
+}
+function formSubmit()
+{
+	var omyForm=document.getElementById('myForm');
+	omyForm.submit();
+}
+</script>
+<style>
+body,div,form{margin:0;
+padding:0;
+}
+
+#form{
+	position:absolute;
+	
+	width:1200px;
+	height:600px;
+	top:20px;
+	left:100px;
+	z-index:1;
+}
+#bg{
+	background-color:#FFF;
+	filter:alpha(opacity:50);
+	opacity:0.5;
+	width:1200px;
+	height:600px;
+}
+#close{
+	position:absolute;
+	top:10px;
+	right:10px;
+	font-size:36px;
+	cursor:pointer;
+}
+#formBox{
+	border:1px solid #999;
+	border-radius:10px;
+	background:#f0f2f4;
+    width:400px;
+	height:350px;
+	color:#FFF;
+	position:absolute;
+	top:50%;
+	left:50%;
+	
+	margin-top:-150px;
+	margin-left:-150px;
+}
+#formBox h2{
+	background-color:#69ba07;
+	width:400px;
+	height:50px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	margin-top:0;
+	margin-bottom:20px;
+	/*
+	display:-webkit-box;
+	display:-moz-box;
+	-webkit-box-pack:center;
+	-webkit-box-align:center;
+	*/
+	display:-webkit-flex;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+	#myForm{
+		text-align:center;
+		line-height:20px;
+		font-size:20px;
+		
+	}
+	#myForm input{
+		diaplay:inline-block;
+		width:60px;
+		height:30px;
+		margin-top:10px;
+		background-color:#69ba07;
+		border:none;
+		border-radius:10px;
+		color:#FFF;
+		}
+
+</style>
+</head>
+
+<body>
+<div id="form">
+<div id="bg"></div>
+	<div id="formBox">
+		<h2>在线留言板</h2>
+	<form id="myForm">
+    	<textarea cols="30" rows="10"></textarea><br/>
+        <input type="submit" value="提交" onclick="formSubmit()"/>
+        <input type="reset" value="重置" onclick="formRest()"/>
+    </form>
+    </div>
+    <div id="close">×</div>
+</div>
+</body>
+</html>

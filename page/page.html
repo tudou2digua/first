@@ -9,6 +9,7 @@
 </head>
 
 <body>
+<div class="basic">
 <nav class="toolbar">
 	<div class="logo">
     	<p>logo</p>
@@ -58,17 +59,17 @@
     	<section class="sec1">
         	<h2>中国商业物业专业服务</h2>
             <div class="row">
-            	<div>
-                	<div class="red-cirl cirl">
+            	<div class="trans">
+                	<div class=" cirl">
                 		<img src="img/images/row1.png">
                      </div>
-                     <div class="sec1-word red-word">
+                     <div class="sec1-word">
                      	<h4>商业物业</h4>
                     	<p>公司实施专业的保安、保洁、绿化和工程保养管理服务，有全委管理、单项管理、品牌输出管理</p>
                      </div>
                  </div>
-                 <div>
-                	<div class="black-cirl cirl">
+                 <div class="trans">
+                	<div class=" cirl">
                 		<img src="img/images/row12.png">
                      </div>
                      <div class="sec1-word">
@@ -78,8 +79,8 @@
                  </div>
             </div>
             <div class="row">
-            	<div>
-                	<div class="black-cirl cirl">
+            	<div class="trans">
+                	<div class=" cirl">
                 		<img src="img/images/row2.png">
                      </div>
                      <div class="sec1-word">
@@ -87,8 +88,8 @@
                     	<p>公司实施专业的保安、保洁、绿化和工程保养管理服务，有全委管理、单项管理、品牌输出管理</p>
                      </div>
                  </div>
-                 <div>
-                	<div class="black-cirl cirl">
+                 <div class="trans">
+                	<div class=" cirl">
                 		<img src="img/images/row22.png">
                      </div>
                      <div class="sec1-word">
@@ -108,13 +109,13 @@
                     <li><a href="javascript:">住宅</a></li>
                 </ol>
                 <div >
-                    <ul class="img-list">
+                    <ul class="img-list" id="img-list">
                         <li><img src="img/images/item1.png" alt="上海世博会 世界气象馆"><p>上海世博会 世界气象馆</p></li>
                         <li><img src="img/images/item2.png" alt="国家开发银行福建分行"><p>国家开发银行福建分行</p></li>
                         <li><img src="img/images/item3.png" alt="中国生殖健康保健培训中心"><p>中国生殖健康保健培训中心</p></li>
                         <li><img src="img/images/item4.png" alt="中国建设银行上海分行"><p>中国建设银行上海分行</p></li>
                     </ul>
-                    <ul class="dirc-list">
+                    <ul class="dirc-list" id="dirc-list">
                         <li><i class="fa fa-angle-left fa-1x" aria-hidden="true"></i></li>
                         <li><i class="fa fa-angle-right fa-1x" aria-hidden="true"></i></i></li>
                     </ul>
@@ -123,18 +124,18 @@
         <div class="part2">
         <div class="content1">
             <article>
-            <h2>新闻动态<span>全部<i class="fa fa-angle-double-right" aria-hidden="true"></i></span></h2>
+            <h2>新闻动态<a href="javascript:">全部<i class="fa fa-angle-double-right" aria-hidden="true"></i></a></h2>
             	<section>
                     <h5>[2015-10-16]关于开展2015年上海市物业管理企业诚信承诺申报的通知</h5>
-                    <p>诚信承诺有效期到期的必须参加本次申报，如条件不符合申报上一等级诚信承诺企业的，可以...</p>
+                   <marquee behavior="scroll" bgcolor="#FFFFFF" width:"400" scrolldelay='100' onMouseOver="this.stop()" onMouseOut="this.start()"> 诚信承诺有效期到期的必须参加本次申报，如条件不符合申报上一等级诚信承诺企业的，可以...</marquee>
                 </section>
                 <section>
                 	<h5>[2015-10-9]小区地上部分与地下车库可否由两家物业管理之案例分析</h5>
-                    <p>某物业公司为小区的前期物业管理单位，小区业主委员会成立后，另聘其他物业公司管理该小区...</p>
+                    <marquee behavior="scroll" bgcolor="#FFFFFF" width:"400" scrolldelay='100' onMouseOver="this.stop()" onMouseOut="this.start()">某物业公司为小区的前期物业管理单位，小区业主委员会成立后，另聘其他物业公司管理该小区...</marquee>
                 </section>
                 <section>
                 	<h5>[2015-9-13]关于表彰上海市物业管理行业“金点子”创业成果项目的通知</h5>
-                    <p>为提高物业服务企业的自主创新能力和管理服务水平，激发员工的岗位创新、创效意识的热情...</p>
+                    <marquee behavior="scroll" bgcolor="#FFFFFF" width:"400" scrolldelay='100' onMouseOver="this.stop()" onMouseOut="this.start()">为提高物业服务企业的自主创新能力和管理服务水平，激发员工的岗位创新、创效意识的热情...</marquee>
                 </section>
             </article>
             </div>
@@ -143,7 +144,7 @@
                 <p>专业、诚信、高效的管理设计能力与执行能力</p>
                 <p>持续驱动百联物业管理的快速成长，实现与开发商/业主共赢的目标</p>
                 <p class="big">我们是<span>中国商业物业专业服务商</span></p>
-                <button type="button" class="btn btn-success"><i class="fa fa-commenting-o" aria-hidden="true"></i>&nbsp;在线留言</button>
+                <button type="button" class="btn btn-success" id="btn"><i class="fa fa-commenting-o" aria-hidden="true"></i>&nbsp;在线留言</button>
             </div>
      
         </div>
@@ -197,8 +198,21 @@
         </div>
     </footer>
 </div>
+</div>
+<div id="form">
+	<div id="bg"></div>
+	<div id="formBox">
+	<h2>在线留言板</h2>
+	<form id="myForm">
+    	<textarea cols="30" rows="10"></textarea><br/>
+        <input  type="submit" value="提交" onclick="formSubmit()"/>
+        <input  type="reset" value="重置" onclick="formRest()"/>
+    </form>
+    </div>
+    <div id="close">×</div>
+</div>
 <script src="jquery-1.12.3.min.js"></script>
 <script src="bootstrap.min.js"></script>
-<script src="page-1.js"></script>
+<script src="page.js"></script>
 </body>
 </html>
