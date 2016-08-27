@@ -1,0 +1,97 @@
+body, div, img, h1, h2, a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none; }
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 251px; }
+  .main .main-page {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; }
+    .main .main-page .page-item {
+      text-align: center;
+      position: absolute;
+      right: 50%;
+      -webkit-transition: all .5s;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      opacity: 0; }
+      .main .main-page .page-item img {
+        width: 100%;
+        height: 100%; }
+      .main .main-page .page-item .caption {
+        position: absolute;
+        left: 20%;
+        top: 16%;
+        text-align: right; }
+        .main .main-page .page-item .caption h1, .main .main-page .page-item .caption h2 {
+          -webkit-font-smoothing: antialiased;
+          font-weight: 900;
+          color: #6b6b6b;
+          -webkit-transition: all .8s .8s;
+          opacity: 0; }
+        .main .main-page .page-item .caption h1 {
+          font-size: 30px;
+          margin-right: 25px; }
+        .main .main-page .page-item .caption h2 {
+          font-size: 20px;
+          margin-right: -25px; }
+    .main .main-page .main-radom {
+      right: -50%; }
+    .main .main-page .page-item-active {
+      right: 0;
+      z-index: 2;
+      opacity: 1; }
+      .main .main-page .page-item-active .caption h1, .main .main-page .page-item-active .caption h2 {
+        margin-right: 0;
+        opacity: 1; }
+    .main .main-page #main-background {
+      right: 0;
+      z-index: 1;
+      opacity: 1; }
+      .main .main-page #main-background .caption h1, .main .main-page #main-background .caption h2 {
+        opacity: 0; }
+      .main .main-page #main-background img {
+        opacity: 1; }
+  .main .main-ctrl {
+    text-align: center;
+    height: 8px;
+    line-height: 8px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    z-index: 3; }
+    .main .main-ctrl .ctrl-item {
+      display: inline-block;
+      width: 14.13%;
+      height: 8px;
+      margin-left: 1px;
+      background-color: #cfcfcf;
+      position: relative; }
+      .main .main-ctrl .ctrl-item:hover {
+        background-color: #ababab; }
+        .main .main-ctrl .ctrl-item:hover img {
+          bottom: 8px;
+          opacity: 1; }
+      .main .main-ctrl .ctrl-item img {
+        display: inline-block;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+        opacity: 0;
+        -webkit-transition: all .3s;
+        -webkit-box-reflect: below 0 -webkit-linear-gradient(transparent, transparent 50%, rgba(255, 255, 255, 0.3)); }
+    .main .main-ctrl .ctrl-item-active {
+      background-color: #9c9c9c; }
+      .main .main-ctrl .ctrl-item-active:hover {
+        background-color: #9c9c9c; }
+        .main .main-ctrl .ctrl-item-active:hover img {
+          opacity: 0; }
+
+/*# sourceMappingURL=ppt.css.map */

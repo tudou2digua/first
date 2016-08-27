@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	#experience{
+	-webkit-perspective:800;
+	-webkit-perspective-origin:50% 50%;
+	overflow:hidden;
+	}
+	#pagegroup{
+	-webkit-transform-style:preserve-3d;
+	position:relative;
+	width:300px;
+	height:300px;
+	margin:0 auto;
+	}
+	.page{
+	width:300px;
+	height:300px;
+	color:#ffffff;
+	background-color:#000000;
+	position:absolute;
+	top:0;
+	left:0;
+	font-size:300px;
+	font-weight:bold;
+	box-sizing:border-box;
+	padding:20px;
+	line-height:300px;
+	text-align:center;
+	-webkit-transform-origin:bottom;
+	
+	}
+	#page1{
+		transform:rotateX(0deg);
+		-webkit-transition:-webkit-transform 1s linear;
+	}
+	#page2,#page3,#page4,#page5,#page6{
+	transform:rotateX(90deg);
+	-webkit-transition:-webkit-transform 1s linear;
+	}
+	#btn{
+	text-align:center;
+	margin-top:20px;
+	}
+  </style>
+ </head>
+ <body>
+  <div id="experience">
+	<div id="pagegroup">
+		<div class="page" id="page1">1</div>
+		<div class="page" id="page2">2</div>
+		<div class="page" id="page3">3</div>
+		<div class="page" id="page4">4</div>
+		<div class="page" id="page5">5</div>
+		<div class="page" id="page6">6</div>
+	</div>
+	
+  </div>
+  <div id="btn">
+		<a href="javascript:pre();">pre</a>&nbsp;<button onclick="next()">next</button>
+	</div>
+  <script type="text/javascript">
+		var curIndex=1;
+		function pre(){
+			if(curIndex==1)
+			return;
+			var curPage=document.getElementById("page"+curIndex);
+			curPage.style.webkitTransform="rotateX(90deg)";
+			curIndex--;
+			var nextPage=document.getElementById('page'+curIndex);
+			nextPage.style.webkitTransform="rotateX(0deg)";
+		}
+		function next(){
+			if(curIndex==6)
+			return;
+			var curPage=document.getElementById("page"+curIndex);
+			curPage.style.WebkitTransform="rotateX(-90deg)";
+			curIndex++;
+			var nextPage=document.getElementById('page'+curIndex);
+			nextPage.style.WebkitTransform="rotateX(0deg)";
+
+		}
+
+  </script>
+ </body>
+</html>
